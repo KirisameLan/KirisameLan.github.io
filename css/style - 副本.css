@@ -1131,16 +1131,13 @@ body {
 #nexmoe-content .nexmoe-post .nexmoe-post-cover img {
   display: block;
   opacity: 0;
-  transition: filter 0.4s ease-in, -webkit-filter 0.4s ease-in, transform 0.5s;
+  transition: opacity 400ms ease-out;
   position: absolute;
   left: 0;
   top: 0;
   object-fit: cover;
   width: 100%;
   height: 100%;
-}
-#nexmoe-content .nexmoe-post .nexmoe-post-cover img:hover {
-  transform: scale(1.08);
 }
 #nexmoe-content .nexmoe-post .nexmoe-post-cover img.lazyloaded {
   opacity: 1;
