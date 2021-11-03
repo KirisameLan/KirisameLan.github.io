@@ -954,7 +954,7 @@ body {
 }
 #nexmoe-header .nexmoe-list .nexmoe-list-item {
   padding: 0 36px;
-  color: #9ca2a8;
+  color: rgba(112,117,121,0.878);
   border-radius: 13px;
   margin-bottom: 10px;
   text-align: center;
