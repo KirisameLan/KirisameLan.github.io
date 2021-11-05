@@ -1,6 +1,6 @@
-var OriginTitle = document.title;
 var titleTime;
 document.addEventListener('visibilitychange', function () {
+var OriginTitle = document.title;
     if (document.hidden) {
         $('[rel="icon"]').attr('href', "/funny.ico");
         document.title = 'Σ(っ °Д °;)っ 页面崩溃啦 ~';

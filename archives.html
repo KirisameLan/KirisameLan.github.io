@@ -23,36 +23,23 @@
 <meta property="article:author" content="湊かなた">
 <meta name="twitter:card" content="summary">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css,npm/hexo-theme-nexmoe@latest/source/lib/mdui_043tiny/css/mdui.css,npm/hexo-theme-nexmoe@latest/source/lib/iconfont/iconfont.css?v=233" crossorigin>
-    <link rel="stylesheet" href="/css/style.css?v=1636009960415">
+    <link rel="stylesheet" href="/css/style.css?v=1636102697413">
      
     
         <link rel="stylesheet" href="//at.alicdn.com/t/font_2899104_j5z0hjvr51l.css">
     
-    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1636009960415">
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1636102697413">
     
 
 <script type="text/javascript" src="https://unpkg.com/artitalk"></script>
 
-<script>
-if( /Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent))
- document.write('<script type="text/javascript" src="foo.js"><\/script>');
-</script>
-
-<script src="./jquery/jquery.min.js"></script>
-<script src="./jquery.pjax/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/pjax/pjax.js"></script>
+<script src="/av-min/av-min.js"></script>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
-<script src="/live2d-widget/autoload.js"></script>
 
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
 <script src='https://cdn.jsdelivr.net/npm/valine'></script>
 
-<script>
-$(document).pjax('a[target!=_blank]', '#pjax-content', {fragment: '#pjax-content'}).on('pjax:complete', function() {
-    }).on('pjax:start', function() { 
-    }).on('pjax:end', function() {
-    });
-</script>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
 <script src="/Meting/APlayer.min.js"></script>
@@ -61,7 +48,7 @@ $(document).pjax('a[target!=_blank]', '#pjax-content', {fragment: '#pjax-content
 <meta name="generator" content="Hexo 5.4.0"></head>
 
 <body class="mdui-drawer-body-left">
-<div style="margin-top: 1.5rem;width: 810px;height: 180px">
+
 <div id="my-aplayer" class="aplayer aplayer-withlrc aplayer-withlist" 
 data-id="7043807280" 
 data-server="netease" 
@@ -91,7 +78,6 @@ style="display: table;width: 100%;">
 
 
 
-<div id="pjax-content">
     <div id="nexmoe-header">
         <div class="nexmoe-drawer mdui-drawer" id="drawer">
     <div class="nexmoe-avatar mdui-ripple">
@@ -104,6 +90,7 @@ style="display: table;width: 100%;">
         <div><span>标签</span>0</div>
         <div><span>分类</span>0</div>
     </div>
+<div id="the-header">
     <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
         
         <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/" title="首页">
@@ -142,6 +129,7 @@ style="display: table;width: 100%;">
         </a>
         
     </div>
+</div>
     <aside id="nexmoe-sidebar">
     
     <div class="nexmoe-widget-wrap">
@@ -192,6 +180,8 @@ style="display: table;width: 100%;">
     </div>
 </div><!-- .nexmoe-drawer -->
     </div>
+
+<div id="the-content">
     <div id="nexmoe-content">
         <div class="nexmoe-primary">
             <section class="nexmoe-archives">
@@ -252,10 +242,10 @@ style="display: table;width: 100%;">
 
  
 
-<script async src="/js/app.js?v=1636009960417"></script>
+<script async src="/js/app.js?v=1636102697414"></script>
 
 
-	<script async src="/js/search.js?v=1636009960417"></script>
+	<script async src="/js/search.js?v=1636102697414"></script>
 
 
 <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
@@ -274,8 +264,11 @@ style="display: table;width: 100%;">
 
 
 
+
+    <script src="/pjax/refresh.js"></script>
 </body>
 
 </html>
 
+<script src="/live2d-widget/autoload.js"></script>
 <script type="text/javascript" src="/js/FunnyTitle.js"></script>
