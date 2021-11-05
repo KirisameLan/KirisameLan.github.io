@@ -33,12 +33,12 @@ if (screen.width >= 768) {
 		initWidget({
 			waifuPath: live2d_path + "waifu-tips.json",
 			//apiPath: "https://live2d.fghrsh.net/api/",
-			cdnPath: "https://cdn.jsdelivr.net/gh/fghrsh/live2d_api/"
+			cdnPath: "https://cdn.jsdelivr.net/gh/KirisameLan/live2d_api@master/"
 		});
 	});
 }
 // initWidget 第一个参数为 waifu-tips.json 的路径，第二个参数为 API 地址
-// API 后端可自行搭建，参考 https://github.com/fghrsh/live2d_api
+// API 后端可自行搭建，参考 https://github.com/fghrsh/live2d_api@master
 // 初始化看板娘会自动加载指定目录下的 waifu-tips.json
 
 console.log(`

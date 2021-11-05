@@ -3,6 +3,6 @@ new Pjax({
   selectors: [
     "title",
     "#the-header",
-    "#the-content",
+    "#nexmoe-content",
   ]
 });
