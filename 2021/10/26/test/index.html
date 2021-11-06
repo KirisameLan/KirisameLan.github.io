@@ -23,22 +23,21 @@
 <meta property="article:author" content="湊かなた">
 <meta name="twitter:card" content="summary">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css,npm/hexo-theme-nexmoe@latest/source/lib/mdui_043tiny/css/mdui.css,npm/hexo-theme-nexmoe@latest/source/lib/iconfont/iconfont.css?v=233" crossorigin>
-    <link rel="stylesheet" href="/css/style.css?v=1636125330990">
+    <link rel="stylesheet" href="/css/style.css?v=1636213831687">
      
     
         <link rel="stylesheet" href="//at.alicdn.com/t/font_2899104_j5z0hjvr51l.css">
     
-    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1636125330990">
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1636213831687">
+    
+        <link rel="stylesheet" href="/custom.css">
     
 
 <script type="text/javascript" src="https://unpkg.com/artitalk"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/pjax/pjax.js"></script>
-<script src="/av-min/av-min.js"></script>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
-
-<script src='https://cdn.jsdelivr.net/npm/valine'></script>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
 <script src="/Meting/APlayer.min.js"></script>
@@ -88,7 +87,7 @@ style="display: table;width: 100%;">
         </a>
     </div>
     <div class="nexmoe-count">
-        <div><span>文章</span>2</div>
+        <div><span>文章</span>1</div>
         <div><span>标签</span>0</div>
         <div><span>分类</span>0</div>
     </div>
@@ -134,7 +133,7 @@ style="display: table;width: 100%;">
 </div>
     <aside id="nexmoe-sidebar">
     
-    <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget-wrap" style="background-color: #ebf3f9de;">
     <div class="nexmoe-widget nexmoe-search">
         
             <form id="search_form">
@@ -148,7 +147,7 @@ style="display: table;width: 100%;">
     </div>
 </div>
     
-    <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget-wrap" style="background-color: #ebf3f9de;">
     <div class="nexmoe-widget nexmoe-social">
         <a class="mdui-ripple" href="http://wpa.qq.com/msgrd?v=3&uin=1937505159&site=qq&menu=yes" target="_blank" mdui-tooltip="{content: 'QQ'}" style="color: rgb(135, 206, 240);background-color: rgba(135, 206, 240, .15);">
             <i class="nexmoefont icon-QQ"></i>
@@ -226,37 +225,23 @@ style="display: table;width: 100%;">
   
       <div class="nexmoe-post-footer">
           <section class="nexmoe-comment">
-    <script id="dsq-count-scr" src="https://minato-kanata.disqus.com/count.js" async></script>
+    <!-- Unpkg -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/disqusjs@1.2.6/dist/disqusjs.min.css">
+<script src="https://cdn.jsdelivr.net/npm/disqusjs@1.2.6/dist/disqus.min.js"></script>
 <div id="disqus_thread"></div>
 <script>
-    var disqus_config = function () {
-        this.page.url = 'https://minato-kanata.com/2021/10/26/test/'; // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'https://minato-kanata.com/2021/10/26/test/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
+var dsqjs = new DisqusJS({
+    shortname: 'minato-kanata',
+    siteName: 'minato-kanata',
+    identifier: 'https://minato-kanata.com/2021/10/26/test/',
+    url: 'https://minato-kanata.com/2021/10/26/test/',
+    title: 'test',
+    api: 'https://disqus.skk.moe/disqus/',
+    apikey: '7nlGERR74PEoKzPBPSEhORFVgwm0A7lJ4Rv0XcBhF1CaRmXCUF5qU2aB9MVgzFKV',
+    admin: 'KirisameLan',
+    adminLabel: 'Admin'
+});
 </script>
-<script id="disqus-thread-script">
- if (!window.DISQUS) {
-    (function() { // DON'T EDIT BELOW THIS LINE
-        var d = document;
-        var s = d.createElement('script');
-        s.src = '//minato-kanata.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', + new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-  }
-    // if disqus <script> is already loaded, we just reset disqus the right way
-    // see https://help.disqus.com/developer/using-disqus-on-ajax-sites
-    else {
-      DISQUS.reset({
-        reload: true,
-        config: function () {
-          this.page.identifier = 'https://minato-kanata.com/2021/10/26/test/';
-          this.page.url = 'https://minato-kanata.com/2021/10/26/test/';
-        }
-      })
-    }
-</script>
-
 </section>
       </div>
   
@@ -297,10 +282,10 @@ style="display: table;width: 100%;">
 
  
 
-<script async src="/js/app.js?v=1636125330991"></script>
+<script async src="/js/app.js?v=1636213831688"></script>
 
 
-	<script async src="/js/search.js?v=1636125330991"></script>
+	<script async src="/js/search.js?v=1636213831688"></script>
 
 
 <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
@@ -324,6 +309,11 @@ style="display: table;width: 100%;">
 </body>
 
 </html>
+
+
+<script defer="" src="https://cdn.jsdelivr.net/npm/animejs@latest"></script>
+<script defer="" src="/js/fireworks.js"></script>
+<canvas class="fireworks" style="position:fixed;left:0;top:0;z-index:99999999;pointer-events:none;"></canvas>
 
 <script src="/live2d-widget/autoload.js"></script>
 <script type="text/javascript" src="/js/FunnyTitle.js"></script>

@@ -1065,8 +1065,8 @@ body {
   position: relative;
 }
 #nexmoe-content .nexmoe-primary {
-  box-shadow: 0 0 1rem rgba(161,177,204,0.4);
-  background-color: #fff;
+  box-shadow: 0 0 1rem rgba(161,177,204,0.9);
+  background-color: rgba(235,243,249,0.871);
   float: left;
   width: 100%;
   padding: 25px;
