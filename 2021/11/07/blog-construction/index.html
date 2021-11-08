@@ -26,19 +26,19 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/KirisameLan/blog-imgbed/blog-img/construction-pjax.jpg">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/KirisameLan/blog-imgbed/blog-img/construction-summary.png">
 <meta property="article:published_time" content="2021-11-07T05:28:54.000Z">
-<meta property="article:modified_time" content="2021-11-07T15:38:05.028Z">
+<meta property="article:modified_time" content="2021-11-08T12:08:11.422Z">
 <meta property="article:author" content="湊かなた">
 <meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="博客">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/KirisameLan/blog-imgbed/blog-img/artitalk-trans-pic.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css,npm/hexo-theme-nexmoe@latest/source/lib/mdui_043tiny/css/mdui.css,npm/hexo-theme-nexmoe@latest/source/lib/iconfont/iconfont.css?v=233" crossorigin>
-    <link rel="stylesheet" href="/css/style.css?v=1636373071823">
+    <link rel="stylesheet" href="/css/style.css?v=1636374041682">
      
     
         <link rel="stylesheet" href="//at.alicdn.com/t/font_2899104_j5z0hjvr51l.css">
     
-    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1636373071823">
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1636374041682">
     
         <link rel="stylesheet" href="/custom.css">
     
@@ -63,7 +63,7 @@
 
 <body class="mdui-drawer-body-left">
 
-<div id="my-aplayer" class="aplayer aplayer-withlrc aplayer-withlist animated fadeIn" 
+<div id="my-aplayer" class="aplayer aplayer-withlrc aplayer-withlist animated fadeInDown" 
 data-id="7043807280" 
 data-server="netease" 
 data-type="playlist" 
@@ -229,7 +229,7 @@ style="display: table;width: 100%;">
     </div>
 
     <div id="nexmoe-content">
-        <div class="nexmoe-primary  animated fadeInUp" style="border-radius: 20px;">
+        <div class="nexmoe-primary  animated fadeIn" style="border-radius: 20px;">
             <div class="nexmoe-post">
 
   <article>
@@ -288,7 +288,7 @@ style="display: table;width: 100%;">
 <p>虽然使用很简单但仅有一个冻鳗人物实在是没什么意思，翻了一会翻到了就发现了<a target="_blank" rel="noopener" href="https://github.com/stevenjoezhang/live2d-widget">这个</a>，支持换人换装和对话框。使用文档说的很多，我也看不太懂。就在layout中加了一句</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p>生成网页后有效果了，我就暂时搁置了。剩下的放在pjax中讲。</p>
+<p>生成网页后有效果了，我就暂时搁置了。剩下的待写。</p>
 <h2 id="音乐播放器"><a href="#音乐播放器" class="headerlink" title="音乐播放器"></a>音乐播放器</h2><p>耗时最长的东西其一。</p>
 <p>初次接触时看着什么APlayer,Meting,hexo-tag-aplayer一头雾水，理不清谁是谁，有什么区别。甚至看不出他们的使用方法里写的是什么语言（</p>
 <p>所幸搜到了<a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000022748851">这篇博文</a>，这我不就明白了吗（，</p>
@@ -319,6 +319,7 @@ style="display: table;width: 100%;">
 <p>正好当时在用的jQuery-pjax不知道为何一添加NProgress之类的就会彻底失效。抱着试试看的态度我删除了原来的pjax使用了<a target="_blank" rel="noopener" href="https://github.com/MoOx/pjax">MoOx/pjax</a>。结果真的是超乎我的意料，不仅切换界面的流畅度大大提升，能够使用NProgress，支持多容器刷新，并且原来在一个界面停留时间过长pjax会失效的bug，以及窗口大小低时header部分会抽风的bug也解决了。唯一无伤大雅的缺点是网址上会多一个时间戳（</p>
 <h3 id="还有一个bug（"><a href="#还有一个bug（" class="headerlink" title="还有一个bug（"></a>还有一个bug（</h3><p>看到左侧的搜索栏了吗，这个搜索会重新刷新整个界面，暂时我还没找到解决方法捏（</p>
 <p>要不干脆改成站外搜索吧（</p>
+<h2 id="动画特效-animate-css"><a href="#动画特效-animate-css" class="headerlink" title="动画特效/animate.css"></a>动画特效/animate.css</h2><p>挖坑</p>
 <h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><p>解决了一个又一个问题，我初步对css、js和html有了一丁点了解。在能够熟练地瞎改css后，我也成功将界面改成圆角并做成了蓝色半透明的感觉！</p>
 <p>本文完成时博客的界面：</p>
 <p><img src="https://cdn.jsdelivr.net/gh/KirisameLan/blog-imgbed/blog-img/construction-summary.png"></p>
@@ -383,7 +384,7 @@ var dsqjs = new DisqusJS({
                               <button class="mdui-fab catalog" style="overflow:unset;background-color: #ebf3f9de;">
                                   <i class="nexmoefont icon-i-catalog"></i>
                                   <div class="nexmoe-toc">
-                                      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E5%8A%9F%E8%83%BD"><span class="toc-number">1.</span> <span class="toc-text">基础功能</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%B4%E8%AF%B4-artitalk-js"><span class="toc-number">1.1.</span> <span class="toc-text">说说&#x2F;artitalk.js</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E4%B8%AA%E5%B0%8F%E9%97%AE%E9%A2%98%EF%BC%9A%E5%8A%A0%E8%BD%BD%E5%8A%A8%E7%94%BB%E4%B8%8E%E8%AF%B4%E8%AF%B4%E5%AE%B9%E5%99%A8%E4%B8%8A%E6%96%B9%E7%9A%84%E5%86%85%E5%AE%B9%E6%9C%89%E9%87%8D%E5%8F%A0"><span class="toc-number">1.1.1.</span> <span class="toc-text">一个小问题：加载动画与说说容器上方的内容有重叠</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%A0%E8%BD%BD%E5%8A%A8%E7%94%BB%EF%BC%9A%E6%B2%A1%E6%B3%A8%E6%84%8F%E5%A4%A7%E5%B0%8F%E5%95%8A"><span class="toc-number">1.1.2.</span> <span class="toc-text">加载动画：没注意大小啊</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD-valine-gt-disqus-gt-disqusjs"><span class="toc-number">1.2.</span> <span class="toc-text">评论功能&#x2F;valine-&gt;disqus-&gt;disqusjs</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BE%8E%E5%8C%96%E4%B8%8E%E4%BC%98%E5%8C%96"><span class="toc-number">2.</span> <span class="toc-text">美化与优化</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#live2d%E7%9C%8B%E6%9D%BF%E5%A8%98"><span class="toc-number">2.1.</span> <span class="toc-text">live2d看板娘</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8"><span class="toc-number">2.2.</span> <span class="toc-text">音乐播放器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%92%AD%E6%94%BE%E5%88%97%E8%A1%A8%E6%97%A0%E6%B3%95%E5%B1%95%E5%BC%80%EF%BC%81"><span class="toc-number">2.2.1.</span> <span class="toc-text">播放列表无法展开！</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%87%E6%8D%A2%E7%95%8C%E9%9D%A2%E9%9F%B3%E4%B9%90%E5%B0%B1%E5%81%9C%E4%BA%86"><span class="toc-number">2.2.2.</span> <span class="toc-text">切换界面音乐就停了</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#pjax"><span class="toc-number">2.3.</span> <span class="toc-text">pjax</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#pjax%E5%8F%AA%E6%94%AF%E6%8C%81%E5%88%B7%E6%96%B0%E4%B8%80%E4%B8%AA%E5%AE%B9%E5%99%A8%EF%BC%9F%EF%BC%9F"><span class="toc-number">2.3.1.</span> <span class="toc-text">pjax只支持刷新一个容器？？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery%E8%BF%87%E6%97%B6%E4%BA%86%EF%BC%9F"><span class="toc-number">2.3.2.</span> <span class="toc-text">jQuery过时了？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%98%E6%9C%89%E4%B8%80%E4%B8%AAbug%EF%BC%88"><span class="toc-number">2.3.3.</span> <span class="toc-text">还有一个bug（</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%B6%E4%BB%96"><span class="toc-number">3.</span> <span class="toc-text">其他</span></a></li></ol>
+                                      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E5%8A%9F%E8%83%BD"><span class="toc-number">1.</span> <span class="toc-text">基础功能</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%B4%E8%AF%B4-artitalk-js"><span class="toc-number">1.1.</span> <span class="toc-text">说说&#x2F;artitalk.js</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E4%B8%AA%E5%B0%8F%E9%97%AE%E9%A2%98%EF%BC%9A%E5%8A%A0%E8%BD%BD%E5%8A%A8%E7%94%BB%E4%B8%8E%E8%AF%B4%E8%AF%B4%E5%AE%B9%E5%99%A8%E4%B8%8A%E6%96%B9%E7%9A%84%E5%86%85%E5%AE%B9%E6%9C%89%E9%87%8D%E5%8F%A0"><span class="toc-number">1.1.1.</span> <span class="toc-text">一个小问题：加载动画与说说容器上方的内容有重叠</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%A0%E8%BD%BD%E5%8A%A8%E7%94%BB%EF%BC%9A%E6%B2%A1%E6%B3%A8%E6%84%8F%E5%A4%A7%E5%B0%8F%E5%95%8A"><span class="toc-number">1.1.2.</span> <span class="toc-text">加载动画：没注意大小啊</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD-valine-gt-disqus-gt-disqusjs"><span class="toc-number">1.2.</span> <span class="toc-text">评论功能&#x2F;valine-&gt;disqus-&gt;disqusjs</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BE%8E%E5%8C%96%E4%B8%8E%E4%BC%98%E5%8C%96"><span class="toc-number">2.</span> <span class="toc-text">美化与优化</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#live2d%E7%9C%8B%E6%9D%BF%E5%A8%98"><span class="toc-number">2.1.</span> <span class="toc-text">live2d看板娘</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8"><span class="toc-number">2.2.</span> <span class="toc-text">音乐播放器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%92%AD%E6%94%BE%E5%88%97%E8%A1%A8%E6%97%A0%E6%B3%95%E5%B1%95%E5%BC%80%EF%BC%81"><span class="toc-number">2.2.1.</span> <span class="toc-text">播放列表无法展开！</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%87%E6%8D%A2%E7%95%8C%E9%9D%A2%E9%9F%B3%E4%B9%90%E5%B0%B1%E5%81%9C%E4%BA%86"><span class="toc-number">2.2.2.</span> <span class="toc-text">切换界面音乐就停了</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#pjax"><span class="toc-number">2.3.</span> <span class="toc-text">pjax</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#pjax%E5%8F%AA%E6%94%AF%E6%8C%81%E5%88%B7%E6%96%B0%E4%B8%80%E4%B8%AA%E5%AE%B9%E5%99%A8%EF%BC%9F%EF%BC%9F"><span class="toc-number">2.3.1.</span> <span class="toc-text">pjax只支持刷新一个容器？？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery%E8%BF%87%E6%97%B6%E4%BA%86%EF%BC%9F"><span class="toc-number">2.3.2.</span> <span class="toc-text">jQuery过时了？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%98%E6%9C%89%E4%B8%80%E4%B8%AAbug%EF%BC%88"><span class="toc-number">2.3.3.</span> <span class="toc-text">还有一个bug（</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8A%A8%E7%94%BB%E7%89%B9%E6%95%88-animate-css"><span class="toc-number">2.4.</span> <span class="toc-text">动画特效&#x2F;animate.css</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%B6%E4%BB%96"><span class="toc-number">3.</span> <span class="toc-text">其他</span></a></li></ol>
                                   </div>
                               </button>
                           
@@ -415,10 +416,10 @@ var dsqjs = new DisqusJS({
 
  
 
-<script async src="/js/app.js?v=1636373071829"></script>
+<script async src="/js/app.js?v=1636374041688"></script>
 
 
-	<script async src="/js/search.js?v=1636373071829"></script>
+	<script async src="/js/search.js?v=1636374041688"></script>
 
 
 <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
