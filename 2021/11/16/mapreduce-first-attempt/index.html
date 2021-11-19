@@ -22,17 +22,17 @@
 <meta property="og:description" content="一次Hadoop Mapreduce作业的完成过程 应该是第一次正儿八经地接触与大数据相关的东西，好多名词都看不明白。 记录一下我完成这次作业时的思考。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-11-16T11:17:56.000Z">
-<meta property="article:modified_time" content="2021-11-16T11:35:47.828Z">
+<meta property="article:modified_time" content="2021-11-19T15:05:01.856Z">
 <meta property="article:author" content="湊かなた">
 <meta property="article:tag" content="Hadoop">
 <meta name="twitter:card" content="summary">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css,npm/hexo-theme-nexmoe@latest/source/lib/mdui_043tiny/css/mdui.css,npm/hexo-theme-nexmoe@latest/source/lib/iconfont/iconfont.css?v=233" crossorigin>
-    <link rel="stylesheet" href="/css/style.css?v=1637062560600">
+    <link rel="stylesheet" href="/css/style.css?v=1637336184644">
      
     
         <link rel="stylesheet" href="//at.alicdn.com/t/font_2899104_j5z0hjvr51l.css">
     
-    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1637062560600">
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1637336184644">
     
         <link rel="stylesheet" href="/custom.css">
     
@@ -132,9 +132,9 @@ style="display: table;width: 100%;">
         </a>
     </div>
     <div class="nexmoe-count">
-        <div><span>文章</span>2</div>
-        <div><span>标签</span>3</div>
-        <div><span>分类</span>2</div>
+        <div><span>文章</span>3</div>
+        <div><span>标签</span>4</div>
+        <div><span>分类</span>3</div>
     </div>
 <div id="the-header">
     <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
@@ -239,6 +239,13 @@ style="display: table;width: 100%;">
         </li>
 
         
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/日语学习/">日语学习</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
       </ul>
 
     </div>
@@ -249,7 +256,7 @@ style="display: table;width: 100%;">
     
   <div class="nexmoe-widget-wrap" style="background-color: #ebf3f9de;">
     <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
-      <a href="/tags/Hadoop/" style="font-size: 10px;">Hadoop</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 10px;">博客</a>
+      <a href="/tags/Hadoop/" style="font-size: 10px;">Hadoop</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 10px;">博客</a> <a href="/tags/%E6%97%A5%E8%AF%AD/" style="font-size: 10px;">日语</a>
     </div>
     
   </div>
@@ -280,7 +287,7 @@ style="display: table;width: 100%;">
       
       <div class="nexmoe-post-meta nexmoe-rainbow" style="margin:10px 0!important;">
     <a><i class="nexmoefont icon-calendar-fill"></i>2021年11月16日</a>
-    <a><i class="nexmoefont icon-areachart"></i>59 字</a>
+    <a><i class="nexmoefont icon-areachart"></i>659 字</a>
 </div>
 
       
@@ -290,7 +297,20 @@ style="display: table;width: 100%;">
 <p>记录一下我完成这次作业时的思考。</p>
 <span id="more"></span>
 
-<p>待写</p>
+<p>先放<a target="_blank" rel="noopener" href="https://github.com/KirisameLan/MapReduce">代码</a></p>
+<p>题目：</p>
+<p>在关系代数中，自然连接(Natural join)是一种特殊的等值连接，它要求两个关系中进行比较的分量必须是相同的属性组，并且在结果中把重复的属性列去掉。</p>
+<p>根据给定的数据《student.xlsx》和《student_course.xlsx》，请使用MapReduce计算模型，实现表student和表student_course的自然连接，结果集包括学生学号、姓名、选修课程编号、考试成绩。</p>
+<h1 id="什么是Hadoop？"><a href="#什么是Hadoop？" class="headerlink" title="什么是Hadoop？"></a>什么是Hadoop？</h1><p>Hadoop是一个能够对大量数据进行分布式处理的软件框架。</p>
+<blockquote>
+<p>Hadoop框架透明地为应用提供可靠性和数据移动。它实现了名为MapReduce的编程范型：应用程序被分割成许多小部分，而每个部分都能在集群中的任意节点上执行或重新执行。此外，Hadoop还提供了分布式文件系统，用以存储所有计算节点的数据，这为整个集群带来了非常高的带宽。MapReduce和分布式文件系统的设计，使得整个框架能够自动处理节点故障。它使应用程序与成千上万的独立计算的电脑和PB级的数据连接起来。现在普遍认为整个Apache Hadoop“平台”包括Hadoop内核、MapReduce、Hadoop分布式文件系统（HDFS）以及一些相关项目，有Apache Hive和Apache HBase等等。</p>
+</blockquote>
+<p>那分布式又是什么呢？（</p>
+<p>简单来说就是就是将一个需要巨大计算能力的问题分配给网络上多台计算机进行解决。</p>
+<h1 id="可能比较重要的HDFS"><a href="#可能比较重要的HDFS" class="headerlink" title="可能比较重要的HDFS"></a>可能比较重要的HDFS</h1><p>HDFS，即Hadoop分布式文件系统，是一个使用Java语言进行编写的<strong>分布式</strong>的文件系统。一个HDFS集群一般由一个NameNode和若干DataNode组成。简单来说NameNode负责管理元信息（关于信息的信息），DataNode负责管理数据块。</p>
+<h1 id="MapReduce又是什么？"><a href="#MapReduce又是什么？" class="headerlink" title="MapReduce又是什么？"></a>MapReduce又是什么？</h1><p>MapReduce是由google提出的用于处理大规模数据集的计算模型，运行在HDFS之上。它包括JobTracker和TaskTracker两个主要组成部分，分别运行在NameNode和DataNode上。用户提交的数据处理请求称为Job，JobTracker将其分解成数据处理任务Task，分配给相关节点上的TaskTracker处理。</p>
+<h2 id="MapReduce的工作过程"><a href="#MapReduce的工作过程" class="headerlink" title="MapReduce的工作过程"></a>MapReduce的工作过程</h2><p>MapReduce的计算过程主要分为两个阶段，即Map阶段和Reduce阶段。</p>
+<p>未完待续</p>
 
   </article>
 
@@ -348,6 +368,13 @@ var dsqjs = new DisqusJS({
                         
                           
                           
+                              <button class="mdui-fab catalog" style="overflow:unset;background-color: #ebf3f9de;">
+                                  <i class="nexmoefont icon-i-catalog"></i>
+                                  <div class="nexmoe-toc">
+                                      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFHadoop%EF%BC%9F"><span class="toc-number">1.</span> <span class="toc-text">什么是Hadoop？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%AF%E8%83%BD%E6%AF%94%E8%BE%83%E9%87%8D%E8%A6%81%E7%9A%84HDFS"><span class="toc-number">2.</span> <span class="toc-text">可能比较重要的HDFS</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#MapReduce%E5%8F%88%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-number">3.</span> <span class="toc-text">MapReduce又是什么？</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#MapReduce%E7%9A%84%E5%B7%A5%E4%BD%9C%E8%BF%87%E7%A8%8B"><span class="toc-number">3.1.</span> <span class="toc-text">MapReduce的工作过程</span></a></li></ol></li></ol>
+                                  </div>
+                              </button>
+                          
                           
                       
 
@@ -376,10 +403,10 @@ var dsqjs = new DisqusJS({
 
  
 
-<script async src="/js/app.js?v=1637062560601"></script>
+<script async src="/js/app.js?v=1637336184645"></script>
 
 
-	<script async src="/js/search.js?v=1637062560601"></script>
+	<script async src="/js/search.js?v=1637336184645"></script>
 
 
 <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
