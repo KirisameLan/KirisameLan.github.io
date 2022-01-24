@@ -29,7 +29,7 @@
     z-index:9999;
 }
  
-#status{
+#status-loading{
     background:url(https://cdn.jsdelivr.net/gh/KirisameLan/blog-imgbed/blog-img/loading-bg.png);
 background-size: cover;
     height:100%;
