@@ -22,17 +22,17 @@
 <meta property="og:description" content="之前学过一点爬虫但却没有实际操作过，最近心血来潮决定一定要掌握基本的爬虫程序编写。第一篇就简单记录复制一下爬虫的相关概念和学习爬虫所需的前端基础。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-02-08T10:05:14.000Z">
-<meta property="article:modified_time" content="2022-02-10T13:54:42.634Z">
+<meta property="article:modified_time" content="2022-02-10T14:13:21.239Z">
 <meta property="article:author" content="夏希">
 <meta property="article:tag" content="python爬虫">
 <meta name="twitter:card" content="summary">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css,npm/hexo-theme-nexmoe@latest/source/lib/mdui_043tiny/css/mdui.css,npm/hexo-theme-nexmoe@latest/source/lib/iconfont/iconfont.css?v=233" crossorigin>
-    <link rel="stylesheet" href="/css/style.css?v=1644501359655">
+    <link rel="stylesheet" href="/css/style.css?v=1644506914485">
      
     
         <link rel="stylesheet" href="//at.alicdn.com/t/font_2899104_j5z0hjvr51l.css">
     
-    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1644501359655">
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1644506914485">
     
         <link rel="stylesheet" href="/custom.css">
     
@@ -136,7 +136,7 @@ style="display: table;width: 100%;">
         </a>
     </div>
     <div class="nexmoe-count">
-        <div><span>文章</span>4</div>
+        <div><span>文章</span>5</div>
         <div><span>标签</span>5</div>
         <div><span>分类</span>3</div>
     </div>
@@ -232,7 +232,7 @@ style="display: table;width: 100%;">
 
         <li class="category-list-item">
           <a class="category-list-link" href="/categories/不务正业/">不务正业</a>
-          <span class="category-list-count">1</span>
+          <span class="category-list-count">2</span>
         </li>
 
         
@@ -260,7 +260,7 @@ style="display: table;width: 100%;">
     
   <div class="nexmoe-widget-wrap" style="background-color: #ebf3f9de;">
     <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
-      <a href="/tags/Hadoop/" style="font-size: 10px;">Hadoop</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/python%E7%88%AC%E8%99%AB/" style="font-size: 10px;">python爬虫</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 10px;">博客</a> <a href="/tags/%E6%97%A5%E8%AF%AD/" style="font-size: 10px;">日语</a>
+      <a href="/tags/Hadoop/" style="font-size: 10px;">Hadoop</a> <a href="/tags/Hexo/" style="font-size: 20px;">Hexo</a> <a href="/tags/python%E7%88%AC%E8%99%AB/" style="font-size: 10px;">python爬虫</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 20px;">博客</a> <a href="/tags/%E6%97%A5%E8%AF%AD/" style="font-size: 10px;">日语</a>
     </div>
     
   </div>
@@ -378,8 +378,7 @@ style="display: table;width: 100%;">
 </blockquote>
 </li>
 </ol>
-<h3 id="HTTP请求与响应"><a href="#HTTP请求与响应" class="headerlink" title="HTTP请求与响应"></a>HTTP请求与响应</h3><h4 id="HTTP请求方法"><a href="#HTTP请求方法" class="headerlink" title="HTTP请求方法"></a>HTTP请求方法</h4><p><strong>HTTP1.0定义三种请求方法</strong></p>
-<ul>
+<h3 id="HTTP请求与响应"><a href="#HTTP请求与响应" class="headerlink" title="HTTP请求与响应"></a>HTTP请求与响应</h3><h4 id="HTTP请求方法"><a href="#HTTP请求方法" class="headerlink" title="HTTP请求方法"></a>HTTP请求方法</h4><h5 id="HTTP1-0定义三种请求方法"><a href="#HTTP1-0定义三种请求方法" class="headerlink" title="HTTP1.0定义三种请求方法"></a><strong>HTTP1.0定义三种请求方法</strong></h5><ul>
 <li><strong>GET方法</strong>：用于请求指定的页面信息,并返回实体主体。是最为常见的HTTP请求方法。</li>
 <li><strong>POST方法</strong>：向指定资源提交数据进行处理请求。数据被包含在请求体中。POST请求可能会导致新的资源的建立和/或已有资源的修改。</li>
 <li>HEAD方法：类似于get请求，只不过返回的响应中没有具体的内容，用于获取报头。</li>
@@ -392,15 +391,15 @@ style="display: table;width: 100%;">
 <li>CONNECT方法：HTTP/1.1协议中预留给能够将连接改为管道方式的代理服务器。</li>
 </ul>
 <h4 id="请求头部的参数内容"><a href="#请求头部的参数内容" class="headerlink" title="请求头部的参数内容"></a>请求头部的参数内容</h4><ul>
-<li>Accept参数：用于向服务器申明客户端(浏览器)可以接受的媒体类型(MIME)的资源<br>常见赋值：text/html、application/xhtm+xml、application/xml类型表示客户端允许接收文本、HTML文件、XML文件等，可使用通配符*/*。</li>
-<li>Accept-encoding参数：参数的作用事项服务器声明客户端(浏览器)允许接收的压缩编码算法。<br>常见赋值：gzip,deflate或br等等。</li>
-<li>Accept-Language参数：用于向服务器申明客户端允许接收的语言。<br>常见赋值：en-US, en和zh-CN等。q，取值范围是从0到1，q表示了权重，en-US的权重最高，为1,中文网站通常会将zh的权重q设为0.9。</li>
-<li>Cache-control参数：用于控制客户端的缓存。<br>常见赋值：private、no-cache、max-age、must-revalidate默认为private，意思是由浏览器自身决定缓存大小。</li>
-<li>Connection参数：用于设置浏览器是否需要与服务器持久连接。<br>常见取值：keep-alive和no;keep-alive表示需要持久连接,而no表示完成此次访问后即关闭连接。</li>
+<li>Accept参数：用于向服务器申明客户端(浏览器)可以接受的媒体类型(MIME)的资源常见赋值：text/html、application/xhtm+xml、application/xml类型表示客户端允许接收文本、HTML文件、XML文件等，可使用通配符*/*。</li>
+<li>Accept-encoding参数：参数的作用事项服务器声明客户端(浏览器)允许接收的压缩编码算法。常见赋值：gzip,deflate或br等等。</li>
+<li>Accept-Language参数：用于向服务器申明客户端允许接收的语言。常见赋值：en-US, en和zh-CN等。q，取值范围是从0到1，q表示了权重，en-US的权重最高，为1,中文网站通常会将zh的权重q设为0.9。</li>
+<li>Cache-control参数：用于控制客户端的缓存。常见赋值：private、no-cache、max-age、must-revalidate默认为private，意思是由浏览器自身决定缓存大小。</li>
+<li>Connection参数：用于设置浏览器是否需要与服务器持久连接。常见取值：keep-alive和no;keep-alive表示需要持久连接,而no表示完成此次访问后即关闭连接。</li>
 <li>Cookie参数：网站服务器为了辨别用户身份、进行会话跟踪而储存在用户本地终端上的数据(通常经过加密)。在HTTP请求头中设置这个参数，在向服务器发送请求时，就会将保存在该参数下的cookie值发送给web服务器，服务器根据这些值可以获得用户信息和访问历史。</li>
 <li>Host参数：用于指定请求发往的服务器的域名和端口号。</li>
 <li>Upgrade-insecure-Requests参数：被赋值为1时，用于声明浏览器支持从http请求自动升级为https请求，并且在以后发送请求的时候都使用https;设置为0时则不允许升级为HTTPs。</li>
-<li>User-Agent参数：用于向服务器发送浏览器的版本、系统、应用程序的信息。<br>常见赋值：Mozilla/5.0 (Windows NT 10.0; WOW64)、AppleWebKit/537.36(KHTML, like Gecko)、Chrome/72.0.3626.121、Safari/537.36</li>
+<li>User-Agent参数：用于向服务器发送浏览器的版本、系统、应用程序的信息。常见赋值：Mozilla/5.0 (Windows NT 10.0; WOW64)、AppleWebKit/537.36(KHTML, like Gecko)、Chrome/72.0.3626.121、Safari/537.36</li>
 <li>Refer参数：用于告诉服务器，客户端是通过哪个页面跟踪到当前页面的。即客户端访问的上一页面地址。</li>
 </ul>
 <h4 id="HTTP响应"><a href="#HTTP响应" class="headerlink" title="HTTP响应"></a>HTTP响应</h4><h5 id="HTTP响应结构"><a href="#HTTP响应结构" class="headerlink" title="HTTP响应结构"></a>HTTP响应结构</h5><ul>
@@ -666,7 +665,7 @@ var dsqjs = new DisqusJS({
                               <button class="mdui-fab catalog" style="overflow:unset;background-color: #ebf3f9de;">
                                   <i class="nexmoefont icon-i-catalog"></i>
                                   <div class="nexmoe-toc">
-                                      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%88%AC%E8%99%AB%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5%E5%92%8C%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86"><span class="toc-number">1.</span> <span class="toc-text">爬虫的基本概念和工作原理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E7%88%AC%E8%99%AB%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-number">1.1.</span> <span class="toc-text">网络爬虫的基本概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E7%88%AC%E8%99%AB%E7%9A%84%E6%9E%84%E6%88%90%E9%83%A8%E5%88%86"><span class="toc-number">1.2.</span> <span class="toc-text">网络爬虫的构成部分</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%88%AC%E8%99%AB%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86"><span class="toc-number">1.3.</span> <span class="toc-text">爬虫的基本工作原理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E7%88%AC%E8%99%AB%E7%9A%84%E5%8A%9F%E8%83%BD%E9%9C%80%E6%B1%82"><span class="toc-number">1.4.</span> <span class="toc-text">网络爬虫的功能需求</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%88%AC%E8%99%AB%E7%9B%B8%E5%85%B3web%E6%8A%80%E6%9C%AF%E4%BB%8B%E7%BB%8D"><span class="toc-number">2.</span> <span class="toc-text">爬虫相关web技术介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%B8%E5%85%B3web%E6%8A%80%E6%9C%AF%E6%A6%82%E8%BF%B0"><span class="toc-number">2.1.</span> <span class="toc-text">相关web技术概述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E7%88%AC%E5%8F%96%E7%9A%84%E5%85%A5%E5%8F%A3URL"><span class="toc-number">2.2.</span> <span class="toc-text">网络爬取的入口URL</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E9%A1%B5%E4%B8%8B%E8%BD%BD%E7%9A%84%E5%8E%9F%E7%90%86"><span class="toc-number">2.3.</span> <span class="toc-text">网页下载的原理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B6%85%E6%96%87%E6%9C%AC%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE"><span class="toc-number">2.3.1.</span> <span class="toc-text">超文本传输协议</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HTTP%E8%AF%B7%E6%B1%82%E4%B8%8E%E5%93%8D%E5%BA%94"><span class="toc-number">2.3.2.</span> <span class="toc-text">HTTP请求与响应</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#HTTP%E8%AF%B7%E6%B1%82%E6%96%B9%E6%B3%95"><span class="toc-number">2.3.2.1.</span> <span class="toc-text">HTTP请求方法</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#HTTP1-1%E6%96%B0%E5%A2%9E%E4%BA%94%E7%A7%8D%E8%AF%B7%E6%B1%82%E6%96%B9%E6%B3%95"><span class="toc-number">2.3.2.1.1.</span> <span class="toc-text">HTTP1.1新增五种请求方法</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%B7%E6%B1%82%E5%A4%B4%E9%83%A8%E7%9A%84%E5%8F%82%E6%95%B0%E5%86%85%E5%AE%B9"><span class="toc-number">2.3.2.2.</span> <span class="toc-text">请求头部的参数内容</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#HTTP%E5%93%8D%E5%BA%94"><span class="toc-number">2.3.2.3.</span> <span class="toc-text">HTTP响应</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#HTTP%E5%93%8D%E5%BA%94%E7%BB%93%E6%9E%84"><span class="toc-number">2.3.2.3.1.</span> <span class="toc-text">HTTP响应结构</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#HTTP%E5%93%8D%E5%BA%94%E7%8A%B6%E6%80%81%E7%A0%81"><span class="toc-number">2.3.2.3.2.</span> <span class="toc-text">HTTP响应状态码</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%93%8D%E5%BA%94%E5%A4%B4%E9%83%A8%E7%9A%84%E5%8F%82%E6%95%B0%E5%86%85%E5%AE%B9"><span class="toc-number">2.3.2.4.</span> <span class="toc-text">响应头部的参数内容</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%85%E5%AE%B9%E8%A7%A3%E6%9E%90%E7%9A%84%E5%AF%B9%E8%B1%A1HTML"><span class="toc-number">2.4.</span> <span class="toc-text">内容解析的对象HTML</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%98%E5%82%A8%E6%95%B0%E6%8D%AE%E7%9A%84%E4%BB%93%E5%BA%93"><span class="toc-number">2.5.</span> <span class="toc-text">存储数据的仓库</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%E5%AD%98%E5%82%A8%E6%95%B0%E6%8D%AE"><span class="toc-number">2.5.1.</span> <span class="toc-text">文本文件存储数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F"><span class="toc-number">2.5.2.</span> <span class="toc-text">数据库管理系统</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-number">2.5.2.1.</span> <span class="toc-text">关系型数据库</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%9D%9E%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-number">2.5.2.2.</span> <span class="toc-text">非关系型数据库</span></a></li></ol></li></ol></li></ol></li></ol>
+                                      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%88%AC%E8%99%AB%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5%E5%92%8C%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86"><span class="toc-number">1.</span> <span class="toc-text">爬虫的基本概念和工作原理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E7%88%AC%E8%99%AB%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-number">1.1.</span> <span class="toc-text">网络爬虫的基本概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E7%88%AC%E8%99%AB%E7%9A%84%E6%9E%84%E6%88%90%E9%83%A8%E5%88%86"><span class="toc-number">1.2.</span> <span class="toc-text">网络爬虫的构成部分</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%88%AC%E8%99%AB%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86"><span class="toc-number">1.3.</span> <span class="toc-text">爬虫的基本工作原理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E7%88%AC%E8%99%AB%E7%9A%84%E5%8A%9F%E8%83%BD%E9%9C%80%E6%B1%82"><span class="toc-number">1.4.</span> <span class="toc-text">网络爬虫的功能需求</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%88%AC%E8%99%AB%E7%9B%B8%E5%85%B3web%E6%8A%80%E6%9C%AF%E4%BB%8B%E7%BB%8D"><span class="toc-number">2.</span> <span class="toc-text">爬虫相关web技术介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%B8%E5%85%B3web%E6%8A%80%E6%9C%AF%E6%A6%82%E8%BF%B0"><span class="toc-number">2.1.</span> <span class="toc-text">相关web技术概述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E7%88%AC%E5%8F%96%E7%9A%84%E5%85%A5%E5%8F%A3URL"><span class="toc-number">2.2.</span> <span class="toc-text">网络爬取的入口URL</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E9%A1%B5%E4%B8%8B%E8%BD%BD%E7%9A%84%E5%8E%9F%E7%90%86"><span class="toc-number">2.3.</span> <span class="toc-text">网页下载的原理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B6%85%E6%96%87%E6%9C%AC%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE"><span class="toc-number">2.3.1.</span> <span class="toc-text">超文本传输协议</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HTTP%E8%AF%B7%E6%B1%82%E4%B8%8E%E5%93%8D%E5%BA%94"><span class="toc-number">2.3.2.</span> <span class="toc-text">HTTP请求与响应</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#HTTP%E8%AF%B7%E6%B1%82%E6%96%B9%E6%B3%95"><span class="toc-number">2.3.2.1.</span> <span class="toc-text">HTTP请求方法</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#HTTP1-0%E5%AE%9A%E4%B9%89%E4%B8%89%E7%A7%8D%E8%AF%B7%E6%B1%82%E6%96%B9%E6%B3%95"><span class="toc-number">2.3.2.1.1.</span> <span class="toc-text">HTTP1.0定义三种请求方法</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#HTTP1-1%E6%96%B0%E5%A2%9E%E4%BA%94%E7%A7%8D%E8%AF%B7%E6%B1%82%E6%96%B9%E6%B3%95"><span class="toc-number">2.3.2.1.2.</span> <span class="toc-text">HTTP1.1新增五种请求方法</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%B7%E6%B1%82%E5%A4%B4%E9%83%A8%E7%9A%84%E5%8F%82%E6%95%B0%E5%86%85%E5%AE%B9"><span class="toc-number">2.3.2.2.</span> <span class="toc-text">请求头部的参数内容</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#HTTP%E5%93%8D%E5%BA%94"><span class="toc-number">2.3.2.3.</span> <span class="toc-text">HTTP响应</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#HTTP%E5%93%8D%E5%BA%94%E7%BB%93%E6%9E%84"><span class="toc-number">2.3.2.3.1.</span> <span class="toc-text">HTTP响应结构</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#HTTP%E5%93%8D%E5%BA%94%E7%8A%B6%E6%80%81%E7%A0%81"><span class="toc-number">2.3.2.3.2.</span> <span class="toc-text">HTTP响应状态码</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%93%8D%E5%BA%94%E5%A4%B4%E9%83%A8%E7%9A%84%E5%8F%82%E6%95%B0%E5%86%85%E5%AE%B9"><span class="toc-number">2.3.2.4.</span> <span class="toc-text">响应头部的参数内容</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%85%E5%AE%B9%E8%A7%A3%E6%9E%90%E7%9A%84%E5%AF%B9%E8%B1%A1HTML"><span class="toc-number">2.4.</span> <span class="toc-text">内容解析的对象HTML</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%98%E5%82%A8%E6%95%B0%E6%8D%AE%E7%9A%84%E4%BB%93%E5%BA%93"><span class="toc-number">2.5.</span> <span class="toc-text">存储数据的仓库</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%E5%AD%98%E5%82%A8%E6%95%B0%E6%8D%AE"><span class="toc-number">2.5.1.</span> <span class="toc-text">文本文件存储数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F"><span class="toc-number">2.5.2.</span> <span class="toc-text">数据库管理系统</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-number">2.5.2.1.</span> <span class="toc-text">关系型数据库</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%9D%9E%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-number">2.5.2.2.</span> <span class="toc-text">非关系型数据库</span></a></li></ol></li></ol></li></ol></li></ol>
                                   </div>
                               </button>
                           
@@ -697,10 +696,10 @@ var dsqjs = new DisqusJS({
 
  
 
-<script async src="/js/app.js?v=1644501359661"></script>
+<script async src="/js/app.js?v=1644506914492"></script>
 
 
-	<script async src="/js/search.js?v=1644501359661"></script>
+	<script async src="/js/search.js?v=1644506914492"></script>
 
 
 <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
