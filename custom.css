@@ -166,3 +166,8 @@ background-size: cover;
     transform: rotateY(0deg);
   }
 }
+
+
+iframe:not([src]) {
+  display: none;
+}
