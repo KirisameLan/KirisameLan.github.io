@@ -6,7 +6,6 @@ new Pjax({
   ]
 });
 
-
 document.addEventListener('pjax:send', function (){
     NProgress.start();
 });

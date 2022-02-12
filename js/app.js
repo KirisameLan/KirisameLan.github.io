@@ -31,3 +31,4 @@ $(document).on("copy", function(){
   sel.selectAllChildren(ele);
   setTimeout(function () {document.body.removeChild(ele);});
 });
+
