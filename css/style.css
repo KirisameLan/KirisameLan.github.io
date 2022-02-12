@@ -1397,8 +1397,8 @@ photos img {
   color: #ffc0cb;
 }
 .nexmoe-rainbow a:nth-child(7n+2) {
-  background-color: rgba(135,206,255,0.15);
-  color: #87ceff;
+  background-color: rgba(255,118,30,0.15);
+  color: #ff761e;
 }
 .nexmoe-rainbow a:nth-child(7n+3) {
   background-color: rgba(255,185,0,0.15);
@@ -1409,8 +1409,8 @@ photos img {
   color: #33d57a;
 }
 .nexmoe-rainbow a:nth-child(7n+5) {
-  background-color: rgba(0,219,255,0.15);
-  color: #00dbff;
+  background-color: rgba(255,78,106,0.15);
+  color: #ff4e6a;
 }
 .nexmoe-rainbow a:nth-child(7n+6) {
   background-color: rgba(26,152,255,0.15);
@@ -1426,7 +1426,7 @@ photos img {
 }
 .nexmoe-rainbow-fill a:nth-child(7n+2) {
   color: #fff;
-  background-color: rgba(135,206,255,0.7);
+  background-color: rgba(255,118,30,0.7);
 }
 .nexmoe-rainbow-fill a:nth-child(7n+3) {
   color: #fff;
@@ -1438,7 +1438,7 @@ photos img {
 }
 .nexmoe-rainbow-fill a:nth-child(7n+5) {
   color: #fff;
-  background-color: rgba(0,219,255,0.7);
+  background-color: rgba(255,78,106,0.7);
 }
 .nexmoe-rainbow-fill a:nth-child(7n+6) {
   color: #fff;
