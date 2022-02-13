@@ -1046,7 +1046,7 @@ body {
 #nexmoe-header .nexmoe-copyright {
   padding: 0 30px;
   text-align: center;
-  color: #777;
+  color: #e4f0f7;
   white-space: normal;
   margin-bottom: 20px;
   font-size: 12px;
@@ -1409,16 +1409,16 @@ photos img {
   color: #33d57a;
 }
 .nexmoe-rainbow a:nth-child(7n+5) {
-  background-color: rgba(231,0,0,0.15);
-  color: #e70000;
-}
-.nexmoe-rainbow a:nth-child(7n+6) {
   background-color: rgba(26,152,255,0.15);
   color: #1a98ff;
 }
-.nexmoe-rainbow a:nth-child(7n+7) {
+.nexmoe-rainbow a:nth-child(7n+6) {
   background-color: rgba(144,144,255,0.15);
   color: #9090ff;
+}
+.nexmoe-rainbow a:nth-child(7n+7) {
+  background-color: rgba(231,0,0,0.15);
+  color: #e70000;
 }
 .nexmoe-rainbow-fill a:nth-child(7n+1) {
   color: #fff;
@@ -1438,15 +1438,15 @@ photos img {
 }
 .nexmoe-rainbow-fill a:nth-child(7n+5) {
   color: #fff;
-  background-color: rgba(231,0,0,0.7);
+  background-color: rgba(26,152,255,0.7);
 }
 .nexmoe-rainbow-fill a:nth-child(7n+6) {
   color: #fff;
-  background-color: rgba(26,152,255,0.7);
+  background-color: rgba(144,144,255,0.7);
 }
 .nexmoe-rainbow-fill a:nth-child(7n+7) {
   color: #fff;
-  background-color: rgba(144,144,255,0.7);
+  background-color: rgba(231,0,0,0.7);
 }
 @-moz-keyframes shake-it {
   0% {
