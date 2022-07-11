@@ -3,7 +3,7 @@
 <html lang="zh-CN">
 <head>
     
-    <title>一次数据可视化作业的完成过程 - ナツキ水族館</title>
+    <title>NLP|N.自然语言处理导论 - ナツキ水族館</title>
     <meta charset="UTF-8">
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
@@ -14,25 +14,27 @@
 
 
     <link rel="shortcut icon" href="/favicon.png" type="image/png" />
-    <meta name="description" content="说是小组作业，但其实我一个人也能做（">
+    <meta name="description" content="其实本来想写数据可视化的作业的，但想了想好像也没什么好写的（ 正好暑假报了节十分水的入门NLP课，正好写篇入门文章节选一部分当成作业。之后不出意外应该会继续学习NLP。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="一次数据可视化作业的完成过程">
+<meta property="og:title" content="NLP|N.自然语言处理导论">
 <meta property="og:url" content="https://minato-kanata.com/posts/f836/index.html">
 <meta property="og:site_name" content="ナツキ水族館">
-<meta property="og:description" content="说是小组作业，但其实我一个人也能做（">
+<meta property="og:description" content="其实本来想写数据可视化的作业的，但想了想好像也没什么好写的（ 正好暑假报了节十分水的入门NLP课，正好写篇入门文章节选一部分当成作业。之后不出意外应该会继续学习NLP。">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/KirisameLan/KirisameLan.github.io@latest/images/NLP0/watermelon.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/KirisameLan/KirisameLan.github.io@latest/images/NLP0/levels.png">
 <meta property="article:published_time" content="2022-05-12T12:03:08.000Z">
-<meta property="article:modified_time" content="2022-05-12T12:08:30.904Z">
+<meta property="article:modified_time" content="2022-07-11T11:37:32.157Z">
 <meta property="article:author" content="夏希">
-<meta property="article:tag" content="python爬虫">
-<meta property="article:tag" content="数据可视化">
+<meta property="article:tag" content="NLP">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/KirisameLan/KirisameLan.github.io@latest/images/NLP0/watermelon.png">
     
         <link rel="stylesheet" href="//at.alicdn.com/t/font_2899104_j5z0hjvr51l.css">
     
-    <link rel="stylesheet" href="/lib/mdui_043tiny/css/mdui.css?v=1656912863230">
-    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1656912863230">
-    <link rel="stylesheet" href="/css/style.css?v=1656912863230">
+    <link rel="stylesheet" href="/lib/mdui_043tiny/css/mdui.css?v=1657539497601">
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1657539497601">
+    <link rel="stylesheet" href="/css/style.css?v=1657539497601">
      
     
         <link rel="stylesheet" href="/custom.css">
@@ -219,7 +221,7 @@ style="display: table;width: 100%;">
     
   <div class="nexmoe-widget-wrap" style="background-color: #ebf3f9de;">
     <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
-      <a href="/tags/Hadoop/" style="font-size: 10px;">Hadoop</a> <a href="/tags/Hexo/" style="font-size: 20px;">Hexo</a> <a href="/tags/python%E7%88%AC%E8%99%AB/" style="font-size: 20px;">python爬虫</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 20px;">博客</a> <a href="/tags/%E5%B0%8F%E8%AE%B0/" style="font-size: 10px;">小记</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/" style="font-size: 10px;">数据可视化</a>
+      <a href="/tags/Hadoop/" style="font-size: 10px;">Hadoop</a> <a href="/tags/Hexo/" style="font-size: 20px;">Hexo</a> <a href="/tags/NLP/" style="font-size: 10px;">NLP</a> <a href="/tags/python%E7%88%AC%E8%99%AB/" style="font-size: 10px;">python爬虫</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 20px;">博客</a> <a href="/tags/%E5%B0%8F%E8%AE%B0/" style="font-size: 10px;">小记</a>
     </div>
     
   </div>
@@ -243,23 +245,103 @@ style="display: table;width: 100%;">
   <article>
       
           <div class="nexmoe-post-cover" style="padding-bottom: 70.72135785007072%;"> 
-              <img data-src="https://cdn.jsdelivr.net/gh/KirisameLan/blog-imgbed/blog-img/一次数据可视化作业的完成过程.jpg" data-sizes="auto" alt="一次数据可视化作业的完成过程" class="lazyload">
-              <h1>一次数据可视化作业的完成过程</h1>
+              <img data-src="https://cdn.jsdelivr.net/gh/KirisameLan/blog-imgbed/blog-img/NLP0.png" data-sizes="auto" alt="NLP|N.自然语言处理导论" class="lazyload">
+              <h1>NLP|N.自然语言处理导论</h1>
           </div>
       
       
       <div class="nexmoe-post-meta nexmoe-rainbow" style="margin:10px 0!important;">
     <a><i class="nexmoefont icon-calendar-fill"></i>2022年05月12日</a>
-    <a><i class="nexmoefont icon-areachart"></i>29 字</a>
+    <a><i class="nexmoefont icon-areachart"></i>1.7k 字</a>
     <a><i class="nexmoefont icon-eye-fill"></i><span id="busuanzi_value_page_pv"></span>次</a>
 </div>
 
       
 
-      <p>说是小组作业，但其实我一个人也能做（</p>
+      <p>其实本来想写数据可视化的作业的，但想了想好像也没什么好写的（</p>
+<p>正好暑假报了节十分水的入门NLP课，正好写篇入门文章节选一部分当成作业。之后不出意外应该会继续学习NLP。</p>
 <span id="more"></span>
 
-<p>过两星期空点时间一下子写完</p>
+<h1 id="自然语言处理"><a href="#自然语言处理" class="headerlink" title="自然语言处理"></a>自然语言处理</h1><h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><p>NLP(Natural Language Processing)，即自然语言处理，是计算机科学领域与人工智能领域中的一个重要方向，研究用电子计算机模拟人的语言交际过程，使计算机能理解和运用人类社会的自然语言如汉语、英语等，实现人机之间的自然语言通信，以代替人的部分脑力劳动，包括查询资料、解答问题、摘录文献、汇编资料以及一切有关自然语言信息的加工处理。NLP的应用举例：</p>
+<ul>
+<li>语音识别</li>
+<li>文本挖掘<ul>
+<li>文本摘要</li>
+<li>问答：通过信息检索和阅读理解算法回答用户给出的问题</li>
+</ul>
+</li>
+<li>机器翻译</li>
+<li>语言训练：拼写/语法纠错</li>
+</ul>
+<h3 id="NLP的困难"><a href="#NLP的困难" class="headerlink" title="NLP的困难"></a>NLP的困难</h3><h3 id="歧义"><a href="#歧义" class="headerlink" title="歧义"></a>歧义</h3><h4 id="词汇级歧义"><a href="#词汇级歧义" class="headerlink" title="词汇级歧义"></a>词汇级歧义</h4><p>以一个<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=Fz1khIxvS9w">老古董搞笑视频</a>举例,视频中的Siri将pie(数学中的π)的语音误识别为可食用的派，这里就体现了一词多义造成的歧义。</p>
+<p>再比如英文单词”design”既可以为动词也可以为名词，词性上的不确定也会为NLP过程带来麻烦。</p>
+<h4 id="语法级歧义"><a href="#语法级歧义" class="headerlink" title="语法级歧义"></a>语法级歧义</h4><p>“natural language processing” 自然语言的处理or自然的语言处理？</p>
+<p>“Get the cat with the gloves” 抓住那只带着手套的猫猫（？</p>
+<h4 id="代词指代歧义"><a href="#代词指代歧义" class="headerlink" title="代词指代歧义"></a>代词指代歧义</h4><ul>
+<li><p>一个老段子：</p>
+<p>if exists(tomato){</p>
+<p>​    buyTomato(2) or buyWatermelon(2)??</p>
+<p>}</p>
+</li>
+</ul>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://cdn.jsdelivr.net/gh/KirisameLan/KirisameLan.github.io@latest/images/NLP0/watermelon.png" alt="watermelon" class="lazyload"></p>
+<ul>
+<li><p>“John persuaded Bill to buy a TV for himself.”</p>
+<p>himself是指John还是Bill呢？</p>
+</li>
+</ul>
+<h3 id="人工智能完备AI-complete"><a href="#人工智能完备AI-complete" class="headerlink" title="人工智能完备AI-complete"></a>人工智能完备AI-complete</h3><blockquote>
+<p>图灵测试：如果一个人（代号 C）使用测试对象皆理解的语言去询问两个他不能看见的对象任意一串问题。对象为：一个是正常思维的人（代号 B）、一个是机器（代号 A）。如果经过若干询问以后，C 不能得出实质的区别来分辨 A 与 B 的不同，则此机器 A 通过图灵测试。</p>
+<p>咖啡测试：生活中空间、操作技能的测试。将一部机器带到任何一个普通的美国家庭中，让它在不经刻意设计的条件下，懂得泡好一杯咖啡。它需要主动在陌生空间中认识咖啡机、辨识咖啡和水、找到合适的杯子并放好，然后按正确的键和操作以冲泡咖啡。这需要仰赖机器人学、图像辨识的演算。</p>
+<p>机器人学生测试：透过机器学习，分析和回答单一问题的测试 。让一个机器去注册一所大学，参加和人类学生同样的考试，然后通过并获得学位。例如日本的东大 AI 或是 IBM 参加抢答节目的华生。</p>
+<p>雇员测试：由尼尔森提出，其被用于测试统筹、推断、发想、规划解决复杂问题的能力。让机器处在一个经济上重要的职位，需要它能够和同样职位的人类做得同样好或者更好。</p>
+</blockquote>
+<p>如果可以解决这些测试，那么就认定该人工智能属于强人工智能，也就是和人类一样聪明，称之为「人工智能完备」。</p>
+<h1 id="NLP的不同层级"><a href="#NLP的不同层级" class="headerlink" title="NLP的不同层级"></a>NLP的不同层级</h1><h2 id="字符序列"><a href="#字符序列" class="headerlink" title="字符序列"></a>字符序列</h2><ul>
+<li>“To be or not to be.”</li>
+<li>  [‘T’, ‘o’, ‘ ‘, ‘b’, ‘e’, ‘ ‘, ‘o’, ‘r’, ‘ ‘, ‘n’, ‘o’, ‘t’, ‘ ‘, ‘t’, ‘o’, ‘ ‘, ‘b’, ‘e’, ‘.’]</li>
+</ul>
+<p>将语句分割成字符序列后语义被完全破坏，无法进行语义分析，不过字符序列可以用于压缩。</p>
+<h2 id="词语序列"><a href="#词语序列" class="headerlink" title="词语序列"></a>词语序列</h2><ul>
+<li>“To be or not to be.”</li>
+<li>[‘To’, ‘be’, ‘or’, ‘not’, ‘to’, ‘be’]<ul>
+<li>其中高频词汇可被用来帮助进行主题建模（Topic Modeling）</li>
+</ul>
+</li>
+<li>在英语中很容易得到并处理词语序列，但在其他语言就不一定了。<ul>
+<li>世界上最长的单词lentokonesuihkuturbiinimoottoriapumekaanikkoaliupseerioppilas(芬兰语:飞机喷气涡轮发动机辅助机械士官学生)由10个词lento/kone/suihku/turbiini/moottori/apu/mekaanikko/ali/upseeri/oppilas组成。</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>NLTK(Natural Language Toolkit)，自然语言处理工具包，在NLP领域中，最常使用的一个Python库。</p>
+<p>图最后部分为使用NLKT计算词频。</p>
+</blockquote>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://cdn.jsdelivr.net/gh/KirisameLan/KirisameLan.github.io@latest/images/NLP0/levels.png" alt="levels" class="lazyload"></p>
+<h1 id="马尔科夫模型"><a href="#马尔科夫模型" class="headerlink" title="马尔科夫模型"></a>马尔科夫模型</h1><h2 id="马尔科夫过程"><a href="#马尔科夫过程" class="headerlink" title="马尔科夫过程"></a>马尔科夫过程</h2><p>马尔科夫过程(Markov process)是一类随机过程，该过程具有如下特性：在已知目前状态的条件下，它的未来状态不依赖于它过去的状态。</p>
+<p>数学语言：设${X(t),t\in T}$为一随机过程，$E$为其状态空间，若对任意的$t_1&lt;t_2&lt;\cdots&lt;t_n&lt;t$，任意的$x_1,x_2,\cdots,x_n,x\in E$，随机变量$X(t)$在已知变量$X(t_1)=x_1,\cdots,X(t_n)=x_n$之下的条件分布函数只与$X(t_n)=x_n$有关，而与$X(t_1)=x_1,\cdots,X(t_{n-1}=x_{n-1})$无关，即条件分布函数满足等式$$F(x,t|x_n,x_{n-1},\cdots,x_2,x_1,t_n,t_{n-1},\cdots,t_2,t_1)=F(x,t|x_n,t_n)$$<br>此性质称为马尔科夫性，满足该性质的过程即为马尔科夫过程。</p>
+<p>简单来说一个马尔科夫过程就是指过程中的每个状态的转移只依赖于之前的n个状态，这个过程被称为n阶马尔科夫模型，其中n是影响转移状态的数目。最简单的马尔科夫过程就是一阶过程，每一个状态的转移只依赖于其之前的那一个状态。</p>
+<p><a target="_blank" rel="noopener" href="https://www.cs.helsinki.fi/u/ttonteri/">https://www.cs.helsinki.fi/u/ttonteri/</a> ←这个网站最下方的剪刀石头布游戏就是利用马尔科夫过程来预测对手的下一步。</p>
+<h2 id="统计语言模型-Statistical-Language-Model"><a href="#统计语言模型-Statistical-Language-Model" class="headerlink" title="统计语言模型(Statistical Language Model)"></a>统计语言模型(Statistical Language Model)</h2><p>统计语言模型是用来描述词、语句乃至于整个文档这些不同的语法单元的概率分布的模型。</p>
+<h3 id="模型"><a href="#模型" class="headerlink" title="模型"></a>模型</h3><p>词语序列（句子）$w_1,w_2,w_3,\cdots,w_n$出现的概率：$$p(w_1,w_2,w_3,\cdots,w_n)=p(w_1)p(w_2|w_1)p(w_3|w_1w_2)p(w_4|w_1w_2w_3)<em>{\cdots\cdots} p(w_n|w_1w_2w</em>{3\cdots\cdots}w_{n-1})$$</p>
+<h3 id="内容依赖"><a href="#内容依赖" class="headerlink" title="内容依赖"></a>内容依赖</h3><ul>
+<li><p>在通常的语言环境中，</p>
+<ul>
+<li>$p($”Today is Wednesday”$)\approx0.001$</li>
+<li>$p($”The equation has a solution”$)\approx0.00001$</li>
+<li>$p($”Today is Wednesday”$)&gt;p($The equation has a solution”$)$</li>
+</ul>
+</li>
+<li><p>而如果是在一场数学相关的会议上</p>
+<ul>
+<li>$p($”Today is Wednesday”$)&lt;p($The equation has a solution”$)$</li>
+</ul>
+</li>
+</ul>
+<h3 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h3><p>过于复杂，假设我们的词典里只有三个词$a,b,c$，那么句子的最大长度为3，可能生成的句子就有$3^3$个。</p>
+<p>$a,b,c,ab,ac,aa,ba,bc,bb,ca,cb,cc,abc,acb,aab,\cdots$</p>
+<p>为了解决这个问题，简化模型N-gram就被提出了。</p>
+<h2 id="N-gram"><a href="#N-gram" class="headerlink" title="N-gram"></a>N-gram</h2><p>今天先写到这</p>
 
   </article>
 
@@ -281,7 +363,7 @@ style="display: table;width: 100%;">
         <a class="nexmoefont icon-appstore-fill -link" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%AD%A6%E4%B9%A0/">大数据学习</a>
     
     
-        <a class="nexmoefont icon-tag-fill -none-link" href="/tags/python%E7%88%AC%E8%99%AB/" rel="tag">python爬虫</a> <a class="nexmoefont icon-tag-fill -none-link" href="/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/" rel="tag">数据可视化</a>
+        <a class="nexmoefont icon-tag-fill -none-link" href="/tags/NLP/" rel="tag">NLP</a>
     
 </div>
 
@@ -297,7 +379,7 @@ var dsqjs = new DisqusJS({
     siteName: 'minato-kanata',
     identifier: 'https://minato-kanata.com/posts/f836/',
     url: 'https://minato-kanata.com/posts/f836/',
-    title: '一次数据可视化作业的完成过程',
+    title: 'NLP|N.自然语言处理导论',
     api: 'https://disqus.skk.moe/disqus/',
     apikey: '7nlGERR74PEoKzPBPSEhORFVgwm0A7lJ4Rv0XcBhF1CaRmXCUF5qU2aB9MVgzFKV',
     admin: 'KirisameLan',
@@ -316,6 +398,13 @@ var dsqjs = new DisqusJS({
                       
                         
                           
+                          
+                              <button class="mdui-fab catalog" style="overflow:unset;background-color: #ebf3f9de;">
+                                  <i class="nexmoefont icon-i-catalog"></i>
+                                  <div class="nexmoe-toc">
+                                      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86"><span class="toc-number">1.</span> <span class="toc-text">自然语言处理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A6%82%E5%BF%B5"><span class="toc-number">1.1.</span> <span class="toc-text">概念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#NLP%E7%9A%84%E5%9B%B0%E9%9A%BE"><span class="toc-number">1.1.1.</span> <span class="toc-text">NLP的困难</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AD%A7%E4%B9%89"><span class="toc-number">1.1.2.</span> <span class="toc-text">歧义</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%8D%E6%B1%87%E7%BA%A7%E6%AD%A7%E4%B9%89"><span class="toc-number">1.1.2.1.</span> <span class="toc-text">词汇级歧义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%AD%E6%B3%95%E7%BA%A7%E6%AD%A7%E4%B9%89"><span class="toc-number">1.1.2.2.</span> <span class="toc-text">语法级歧义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%A3%E8%AF%8D%E6%8C%87%E4%BB%A3%E6%AD%A7%E4%B9%89"><span class="toc-number">1.1.2.3.</span> <span class="toc-text">代词指代歧义</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AE%8C%E5%A4%87AI-complete"><span class="toc-number">1.1.3.</span> <span class="toc-text">人工智能完备AI-complete</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#NLP%E7%9A%84%E4%B8%8D%E5%90%8C%E5%B1%82%E7%BA%A7"><span class="toc-number">2.</span> <span class="toc-text">NLP的不同层级</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E5%BA%8F%E5%88%97"><span class="toc-number">2.1.</span> <span class="toc-text">字符序列</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%8D%E8%AF%AD%E5%BA%8F%E5%88%97"><span class="toc-number">2.2.</span> <span class="toc-text">词语序列</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%A9%AC%E5%B0%94%E7%A7%91%E5%A4%AB%E6%A8%A1%E5%9E%8B"><span class="toc-number">3.</span> <span class="toc-text">马尔科夫模型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A9%AC%E5%B0%94%E7%A7%91%E5%A4%AB%E8%BF%87%E7%A8%8B"><span class="toc-number">3.1.</span> <span class="toc-text">马尔科夫过程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%9F%E8%AE%A1%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B-Statistical-Language-Model"><span class="toc-number">3.2.</span> <span class="toc-text">统计语言模型(Statistical Language Model)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A8%A1%E5%9E%8B"><span class="toc-number">3.2.1.</span> <span class="toc-text">模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%85%E5%AE%B9%E4%BE%9D%E8%B5%96"><span class="toc-number">3.2.2.</span> <span class="toc-text">内容依赖</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%BA%E7%82%B9"><span class="toc-number">3.2.3.</span> <span class="toc-text">缺点</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#N-gram"><span class="toc-number">3.3.</span> <span class="toc-text">N-gram</span></a></li></ol></li></ol>
+                                  </div>
+                              </button>
                           
                           
                       
@@ -344,7 +433,7 @@ var dsqjs = new DisqusJS({
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
  
 
-<script async src="/js/app.js?v=1656912863231"></script>
+<script async src="/js/app.js?v=1657539497604"></script>
 
 
 
