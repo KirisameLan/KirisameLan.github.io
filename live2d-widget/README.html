@@ -28,22 +28,24 @@
 </ul>
 <h3 id="Self-host"><a href="#Self-host" class="headerlink" title="Self-host"></a>Self-host</h3><p>你也可以直接把这些文件放到服务器上，而不是通过 CDN 加载。</p>
 <ul>
-<li>如果你能够通过 <code>ssh</code> 访问你的主机，请把整个仓库克隆到服务器上。执行：<pre><code class="bash">cd /path/to/your/webroot
-# Clone this repository
-git clone https://github.com/stevenjoezhang/live2d-widget.git
-</code></pre>
-</li>
-<li>如果你的主机无法用 <code>ssh</code> 连接（例如一般的虚拟主机），请选择 <code>Download ZIP</code>，然后通过 <code>ftp</code> 等方式上传到主机上，再解压到网站的目录下。</li>
-<li>如果你是通过 Hexo 等工具部署的静态博客，请在博客源文件（即 <code>source</code>）目录下，执行前述的 <code>git clone</code> 命令。重新部署博客时，相关文件就会自动上传到对应的路径下。为了避免这些文件被 Hexo 插件错误地修改，可能需要设置 <code>skip_render</code>。</li>
+<li>如果你能够通过 <code>ssh</code> 访问你的主机，请把整个仓库克隆到服务器上。执行：<br>&#96;&#96;&#96;bash<br>cd &#x2F;path&#x2F;to&#x2F;your&#x2F;webroot</li>
 </ul>
-<p>这样，整个项目就可以通过你的服务器 IP 或者域名从公网访问了。不妨试试能否正常地通过浏览器打开 <code>autoload.js</code> 和 <code>live2d.min.js</code> 等文件，并确认这些文件的内容是完整和正确的。<br>一切正常的话，接下来修改一些配置就行了。（需要通过服务器上的文本编辑器修改；你也可以先在本地完成这一步骤，再上传到服务器上）<br>修改 <code>autoload.js</code> 中的常量 <code>live2d_path</code> 为 <code>live2d-widget</code> 这一目录的 URL。比如说，如果你能够通过</p>
-<pre><code>https://example.com/path/to/live2d-widget/live2d.min.js
+<h1 id="Clone-this-repository"><a href="#Clone-this-repository" class="headerlink" title="Clone this repository"></a>Clone this repository</h1><p>  git clone <a href="https://github.com/stevenjoezhang/live2d-widget.git">https://github.com/stevenjoezhang/live2d-widget.git</a></p>
+<pre><code>- 如果你的主机无法用 `ssh` 连接（例如一般的虚拟主机），请选择 `Download ZIP`，然后通过 `ftp` 等方式上传到主机上，再解压到网站的目录下。
+- 如果你是通过 Hexo 等工具部署的静态博客，请在博客源文件（即 `source`）目录下，执行前述的 `git clone` 命令。重新部署博客时，相关文件就会自动上传到对应的路径下。为了避免这些文件被 Hexo 插件错误地修改，可能需要设置 `skip_render`。
+
+这样，整个项目就可以通过你的服务器 IP 或者域名从公网访问了。不妨试试能否正常地通过浏览器打开 `autoload.js` 和 `live2d.min.js` 等文件，并确认这些文件的内容是完整和正确的。  
+一切正常的话，接下来修改一些配置就行了。（需要通过服务器上的文本编辑器修改；你也可以先在本地完成这一步骤，再上传到服务器上）  
+修改 `autoload.js` 中的常量 `live2d_path` 为 `live2d-widget` 这一目录的 URL。比如说，如果你能够通过
 </code></pre>
-<p>访问到 <code>live2d.min.js</code>，那么就把 <code>live2d_path</code> 的值修改为</p>
-<pre><code>https://example.com/path/to/live2d-widget/
+<p><a href="https://example.com/path/to/live2d-widget/live2d.min.js">https://example.com/path/to/live2d-widget/live2d.min.js</a></p>
+<pre><code>访问到 `live2d.min.js`，那么就把 `live2d_path` 的值修改为
 </code></pre>
-<p>路径末尾的 <code>/</code> 一定要加上。具体可以参考 <code>autoload.js</code> 内的注释。<br>完成后，在你要添加看板娘的界面加入</p>
-<pre><code class="xml">&lt;script src=&quot;https://example.com/path/to/live2d-widget/autoload.js&quot;&gt;&lt;/script&gt;
+<p><a href="https://example.com/path/to/live2d-widget/">https://example.com/path/to/live2d-widget/</a></p>
+<pre><code>路径末尾的 `/` 一定要加上。具体可以参考 `autoload.js` 内的注释。  
+完成后，在你要添加看板娘的界面加入
+```xml
+&lt;script src=&quot;https://example.com/path/to/live2d-widget/autoload.js&quot;&gt;&lt;/script&gt;
 </code></pre>
 <p>就可以加载了。</p>
 <h2 id="后端-API"><a href="#后端-API" class="headerlink" title="后端 API"></a>后端 API</h2><p><code>initWidget</code> 方法接受名为 <code>apiPath</code> 和 <code>cdnPath</code> 的参数，两者设置其中一项即可。其中 <code>apiPath</code> 为后端 API 的 URL，可以自行搭建，并增加模型（需要修改的内容比较多，此处不再赘述）。而 <code>cdnPath</code> 则是通过 jsDelivr 这样的 CDN 服务加载资源，更加稳定。</p>
